@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mandelbrot.Mandelbrot">
+    <Canvas fx:id="canvas" height="720" onMouseDragged="#mouseMoves" onMousePressed="#mousePressed" onMouseReleased="#mouseReleased" width="720" GridPane.columnIndex="0" GridPane.rowSpan="6" />
+    <Button minWidth="100" onAction="#draw" text="Draw Mandelbrot" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <Button minWidth="100" onAction="#clearCanvas" text="Clear" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+    <TextField fx:id="rField" promptText="Set range of function" text="Set range of function" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <TextField fx:id="wField" promptText="Set width of picture" text="Set width of picture" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <TextField fx:id="hField" promptText="Set height of picture" text="Set height of picture" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    <TextField fx:id="aReal" promptText="1st real number" text="1st real number" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <TextField fx:id="aImaginary" promptText="1st imaginary number" text="1st imaginary number" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+    <TextField fx:id="bReal" promptText="2nd real number" text="2nd real number" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <TextField fx:id="bImaginary" promptText="2nd imaginary number" text="2nd imaginary number" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+</GridPane>
